@@ -4,9 +4,9 @@ start: setup
 
 
 setup: ## Creation des dossiers de données
-	mkdir -p /home/francis/data
-	mkdir -p /home/francis/data/mariadb
-	mkdir -p /home/francis/data/wordpress
+	mkdir -p /home/fbouchar/data
+	mkdir -p /home/fbouchar/data/mariadb
+	mkdir -p /home/fbouchar/data/wordpress
 
 
 up: ## Lance Inception
@@ -14,7 +14,7 @@ up: ## Lance Inception
 
 
 down: ## Arrete Inception
-	cd srcs && docker-compose down -v
+	cd srcs && docker compose down -v
 
 
 build: ## Fabrique les images docker
@@ -43,7 +43,7 @@ clean: down ## Arrête et supprime les containers
 
 
 cleanvol: ## Enleve les volumes persistants
-	sudo rm -rf /Users/francisbouchard/data
+	sudo rm -rf /home/fbouchar/data
 
 
 fclean: down clean prune cleanvol ## Nettoie tout

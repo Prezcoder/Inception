@@ -11,13 +11,13 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/francis/data/wordpress'
+      device: '/home/fbouchar/data/wordpress'
   mariadb:
     driver: local
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/francis/data/mariadb'
+      device: '/home/fbouchar/data/mariadb'
 
 services:
   nginx:
