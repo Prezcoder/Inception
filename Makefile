@@ -4,9 +4,9 @@ start: setup
 
 
 setup: ## Creation des dossiers de données
-	mkdir -p /home/fbouchar/data
-	mkdir -p /home/fbouchar/data/mariadb
-	mkdir -p /home/fbouchar/data/wordpress
+	sudo mkdir -p /home/fbouchar/data
+	sudo mkdir -p /home/fbouchar/data/mariadb
+	sudo mkdir -p /home/fbouchar/data/wordpress
 
 
 up: ## Lance Inception
