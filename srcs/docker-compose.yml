@@ -78,7 +78,7 @@ services:
 #      - Définit les dépendances sur le service "wordpress".
 #      - Utilise un fichier `.env` pour charger les variables d'environnement.
 #      - Expose le port 443 de l'hôte sur le port 443 du conteneur.
-#      - Montre le volume "wordpress" dans le conteneur pour héberger les fichiers WordPress.
+#      - Monte le volume "wordpress" dans le conteneur pour héberger les fichiers WordPress.
 #      - Utilise le réseau "inception".
 #      - Redémarre le conteneur en cas d'échec.
 
@@ -88,7 +88,7 @@ services:
 #      - Expose le port 3306 de l'hôte sur le port 3306 du conteneur pour la base de données MySQL.
 #      - Utilise un fichier `.env` pour charger les variables d'environnement.
 #      - Redémarre le conteneur en cas d'échec.
-#      - Montre le volume "mariadb" dans le conteneur pour stocker les données de la base de données.
+#      - Monte le volume "mariadb" dans le conteneur pour stocker les données de la base de données.
 
 #    - **wordpress :**
 #      - Crée un conteneur nommé "wordpress" basé sur l'image Docker "wordpress" et construit à partir du fichier Dockerfile spécifié (`./requirements/wordpress`).
@@ -97,6 +97,6 @@ services:
 #      - Utilise un fichier `.env` pour charger les variables d'environnement.
 #      - Définit les dépendances sur le service "mariadb".
 #      - Redémarre le conteneur en cas d'échec.
-#      - Montre le volume "wordpress" dans le conteneur pour héberger les fichiers WordPress.
+#      - Monte le volume "wordpress" dans le conteneur pour héberger les fichiers WordPress.
 
 # En résumé, ce fichier Docker Compose définit un environnement Docker complet avec un serveur Nginx, une base de données MariaDB et un serveur WordPress, tous interconnectés via un réseau Docker nommé "inception" et utilisant des volumes pour stocker les données persistantes.

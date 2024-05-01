@@ -1,3 +1,5 @@
 .idea
 srcs/requirements/nginx/conf/nginx-selfsigned.crt
-srcs/requirements/nginx/conf/nginx-selfsigned.key 
+srcs/requirements/nginx/conf/nginx-selfsigned.key
+.DS_Store
+.env
