@@ -58,8 +58,8 @@ db :
 
 # #password = DB_ROOT_PASSWORD
 # show databases;
-# use fbouchar_db
-# show tables
-# select * from wp_users
+# use fbouchar_db;
+# show tables;
+# select * from wp_users;
 
 .PHONY: start setup up down build status reload logs prune clean cleanvol fclean re help
